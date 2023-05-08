@@ -1,7 +1,7 @@
 plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
-    id 'com.chaquo.python'
+
 }
 
 android {
@@ -23,11 +23,11 @@ android {
         }
 
     }
-    sourceSets {
+  /*  sourceSets {
         main {
             python.srcDir "Users/logesh/Desktop/ONDC2/py/src/main/python"
         }
-    }
+    }*/
 
     buildTypes {
         release {

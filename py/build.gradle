@@ -1,8 +1,7 @@
 plugins {
     id 'com.android.library'
     id 'org.jetbrains.kotlin.android'
-    id 'com.chaquo.python'
-
+    id 'com.chaquo.python' version '14.0.2'
 }
 
 android {
@@ -20,14 +19,13 @@ android {
         tasks.withType(org.gradle.api.tasks.Copy) {
             duplicatesStrategy = org.gradle.api.tasks.Copy.DuplicatesStrategy.INCLUDE
         }
-       /* python {
-            version "3.10"
+        python {
             pip {
                 //install "pycryptodome == 3.17"
                 install "web3"
                 //install "-r", "requirements.txt"
             }
-        }*/
+        }
     }
 
 
@@ -55,4 +53,5 @@ dependencies {
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+ //   implementation 'com.chaquo.python:chaquopy:14.0.2'
 }
